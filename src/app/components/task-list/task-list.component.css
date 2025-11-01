@@ -1,0 +1,44 @@
+.list-div {
+    max-width: 200px;
+    text-align: left;
+    color: rgb(6, 6, 118);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    background-color: rgba(70, 118, 196, 0.564);
+    max-width: 200px;
+    margin-bottom: 10px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: grab;
+    transition: all 0.2s ease;
+}
+
+li:hover {
+    background-color: rgba(70, 118, 196, 0.7);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+li:active {
+    cursor: grabbing;
+}
+
+/* Style pour les tâches en cours de drag */
+.cdk-drag-preview {
+    background-color: rgba(70, 118, 196, 0.9);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    padding: 12px 16px;
+}
+
+.cdk-drag-animating {
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}

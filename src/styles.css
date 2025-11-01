@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(#37373929,
+            /* filtre violet transparent */
+            #1a1b1b26), url('/assets/fullimg.jpg');
+    background-size: cover;
+    /* couvre toute la page */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    /* reste fixe au scroll */
+    font-family: Arial, sans-serif;
+}
